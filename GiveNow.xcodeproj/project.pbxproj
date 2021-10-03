@@ -9,14 +9,21 @@
 /* Begin PBXBuildFile section */
 		BC5CA416270918C7000BD791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA415270918C7000BD791 /* AppDelegate.swift */; };
 		BC5CA418270918C7000BD791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA417270918C7000BD791 /* SceneDelegate.swift */; };
-		BC5CA41A270918C7000BD791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA419270918C7000BD791 /* ViewController.swift */; };
-		BC5CA41D270918C7000BD791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5CA41B270918C7000BD791 /* Main.storyboard */; };
+		BC5CA41A270918C7000BD791 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA419270918C7000BD791 /* MainViewController.swift */; };
 		BC5CA420270918C7000BD791 /* GiveNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA41E270918C7000BD791 /* GiveNow.xcdatamodeld */; };
 		BC5CA422270918CA000BD791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5CA421270918CA000BD791 /* Assets.xcassets */; };
 		BC5CA425270918CA000BD791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5CA423270918CA000BD791 /* LaunchScreen.storyboard */; };
 		BC5CA430270918CA000BD791 /* GiveNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA42F270918CA000BD791 /* GiveNowTests.swift */; };
 		BC5CA43A270918CA000BD791 /* GiveNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA439270918CA000BD791 /* GiveNowUITests.swift */; };
 		BC5CA43C270918CA000BD791 /* GiveNowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA43B270918CA000BD791 /* GiveNowUITestsLaunchTests.swift */; };
+		BC5CA45327091CA0000BD791 /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA45227091CA0000BD791 /* CompanyViewModel.swift */; };
+		BC5CA459270932FF000BD791 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA458270932FF000BD791 /* UIView+Ext.swift */; };
+		BC5CA45B27093588000BD791 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA45A27093588000BD791 /* DonateViewController.swift */; };
+		BC5CA45E270935CB000BD791 /* DonationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA45D270935CB000BD791 /* DonationDelegate.swift */; };
+		BCA05A332709492800F37E2D /* GiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA05A322709492800F37E2D /* GiveNowView.swift */; };
+		BCA05A35270950AA00F37E2D /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA05A34270950AA00F37E2D /* LogoView.swift */; };
+		BCA05A372709516800F37E2D /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA05A362709516800F37E2D /* DescriptionView.swift */; };
+		BCA05A392709521A00F37E2D /* CurrentDonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA05A382709521A00F37E2D /* CurrentDonationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,7 @@
 		BC5CA412270918C7000BD791 /* GiveNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5CA415270918C7000BD791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5CA417270918C7000BD791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC5CA419270918C7000BD791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC5CA41C270918C7000BD791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC5CA419270918C7000BD791 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC5CA41F270918C7000BD791 /* GiveNow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiveNow.xcdatamodel; sourceTree = "<group>"; };
 		BC5CA421270918CA000BD791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5CA424270918CA000BD791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		BC5CA435270918CA000BD791 /* GiveNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiveNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5CA439270918CA000BD791 /* GiveNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveNowUITests.swift; sourceTree = "<group>"; };
 		BC5CA43B270918CA000BD791 /* GiveNowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveNowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC5CA45227091CA0000BD791 /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
+		BC5CA458270932FF000BD791 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		BC5CA45A27093588000BD791 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		BC5CA45D270935CB000BD791 /* DonationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationDelegate.swift; sourceTree = "<group>"; };
+		BCA05A322709492800F37E2D /* GiveNowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveNowView.swift; sourceTree = "<group>"; };
+		BCA05A34270950AA00F37E2D /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		BCA05A362709516800F37E2D /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		BCA05A382709521A00F37E2D /* CurrentDonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDonationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,12 @@
 		BC5CA414270918C7000BD791 /* GiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				BC5CA415270918C7000BD791 /* AppDelegate.swift */,
-				BC5CA417270918C7000BD791 /* SceneDelegate.swift */,
-				BC5CA419270918C7000BD791 /* ViewController.swift */,
-				BC5CA41B270918C7000BD791 /* Main.storyboard */,
+				BC5CA45C270935B8000BD791 /* Protocols */,
+				BC5CA457270932EF000BD791 /* Extensions */,
+				BC5CA45427092FE0000BD791 /* Views */,
+				BC5CA45127091C7F000BD791 /* Model */,
+				BC5CA4492709191B000BD791 /* Config */,
+				BC5CA44827091910000BD791 /* View Controllers */,
 				BC5CA421270918CA000BD791 /* Assets.xcassets */,
 				BC5CA423270918CA000BD791 /* LaunchScreen.storyboard */,
 				BC5CA426270918CA000BD791 /* Info.plist */,
@@ -128,6 +144,59 @@
 				BC5CA43B270918CA000BD791 /* GiveNowUITestsLaunchTests.swift */,
 			);
 			path = GiveNowUITests;
+			sourceTree = "<group>";
+		};
+		BC5CA44827091910000BD791 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA419270918C7000BD791 /* MainViewController.swift */,
+				BC5CA45A27093588000BD791 /* DonateViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BC5CA4492709191B000BD791 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA415270918C7000BD791 /* AppDelegate.swift */,
+				BC5CA417270918C7000BD791 /* SceneDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BC5CA45127091C7F000BD791 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA45227091CA0000BD791 /* CompanyViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC5CA45427092FE0000BD791 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCA05A322709492800F37E2D /* GiveNowView.swift */,
+				BCA05A34270950AA00F37E2D /* LogoView.swift */,
+				BCA05A362709516800F37E2D /* DescriptionView.swift */,
+				BCA05A382709521A00F37E2D /* CurrentDonationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC5CA457270932EF000BD791 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA458270932FF000BD791 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC5CA45C270935B8000BD791 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CA45D270935CB000BD791 /* DonationDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +305,6 @@
 			files = (
 				BC5CA425270918CA000BD791 /* LaunchScreen.storyboard in Resources */,
 				BC5CA422270918CA000BD791 /* Assets.xcassets in Resources */,
-				BC5CA41D270918C7000BD791 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +329,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5CA41A270918C7000BD791 /* ViewController.swift in Sources */,
+				BC5CA45E270935CB000BD791 /* DonationDelegate.swift in Sources */,
+				BCA05A372709516800F37E2D /* DescriptionView.swift in Sources */,
+				BC5CA41A270918C7000BD791 /* MainViewController.swift in Sources */,
+				BC5CA459270932FF000BD791 /* UIView+Ext.swift in Sources */,
 				BC5CA416270918C7000BD791 /* AppDelegate.swift in Sources */,
+				BC5CA45327091CA0000BD791 /* CompanyViewModel.swift in Sources */,
 				BC5CA418270918C7000BD791 /* SceneDelegate.swift in Sources */,
+				BC5CA45B27093588000BD791 /* DonateViewController.swift in Sources */,
+				BCA05A332709492800F37E2D /* GiveNowView.swift in Sources */,
+				BCA05A35270950AA00F37E2D /* LogoView.swift in Sources */,
 				BC5CA420270918C7000BD791 /* GiveNow.xcdatamodeld in Sources */,
+				BCA05A392709521A00F37E2D /* CurrentDonationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +377,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC5CA41B270918C7000BD791 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC5CA41C270918C7000BD791 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC5CA423270918CA000BD791 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +516,7 @@
 				INFOPLIST_FILE = GiveNow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,7 +544,7 @@
 				INFOPLIST_FILE = GiveNow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +556,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
