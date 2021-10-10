@@ -9,9 +9,10 @@ import UIKit
 
 class LogoView: UIView {
     
+    weak var delegate: PhotoPickerDelegate?
     let logoImageView = UIImageView()
     let companyNameLabel = UILabel()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
@@ -22,7 +23,6 @@ class LogoView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 // MARK: - UI Setup
@@ -34,6 +34,11 @@ extension LogoView {
         // Attributes
         logoImageView.backgroundColor = UIColor.clear
         logoImageView.contentMode = .scaleAspectFit
+        logoImageView.isUserInteractionEnabled = true
+        
+        // Action to upload image
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        logoImageView.addGestureRecognizer(tapGestureRecognizer)
         
         // Constraints
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,6 +68,10 @@ extension LogoView {
             companyNameLabel.leadingAnchor.constraint(equalTo: logoImageView.leadingAnchor, constant: 10),
             companyNameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10)
         ])
+    }
+    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+        self.delegate?.presentPhotoPicker()
     }
 }
 

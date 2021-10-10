@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC09887627129FED00D80B19 /* PhotoPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09887527129FED00D80B19 /* PhotoPickerDelegate.swift */; };
 		BC5CA416270918C7000BD791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA415270918C7000BD791 /* AppDelegate.swift */; };
 		BC5CA418270918C7000BD791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA417270918C7000BD791 /* SceneDelegate.swift */; };
 		BC5CA41A270918C7000BD791 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CA419270918C7000BD791 /* MainViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC09887527129FED00D80B19 /* PhotoPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDelegate.swift; sourceTree = "<group>"; };
 		BC5CA412270918C7000BD791 /* GiveNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5CA415270918C7000BD791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5CA417270918C7000BD791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5CA45D270935CB000BD791 /* DonationDelegate.swift */,
+				BC09887527129FED00D80B19 /* PhotoPickerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				BC5CA418270918C7000BD791 /* SceneDelegate.swift in Sources */,
 				BC5CA45B27093588000BD791 /* DonateViewController.swift in Sources */,
 				BCA05A332709492800F37E2D /* GiveNowView.swift in Sources */,
+				BC09887627129FED00D80B19 /* PhotoPickerDelegate.swift in Sources */,
 				BCA05A35270950AA00F37E2D /* LogoView.swift in Sources */,
 				BC5CA420270918C7000BD791 /* GiveNow.xcdatamodeld in Sources */,
 				BCA05A392709521A00F37E2D /* CurrentDonationsView.swift in Sources */,

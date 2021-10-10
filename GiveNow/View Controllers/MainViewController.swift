@@ -50,6 +50,7 @@ extension MainViewController {
     }
     
     private func setupLogoView() {
+        logoView.delegate = self
         stackView.addArrangedSubview(logoView)
         
         logoView.setupWithViewModel(viewModel: viewModel)
@@ -123,5 +124,32 @@ extension MainViewController: DonationDelegate {
             self.viewModel.currentDonationsDollarAmount += dollarAmount
             self.currentDonationsView.setupWithViewModel(viewModel: self.viewModel)
         }
+    }
+}
+
+// MARK: - PhotoPickerDelegate
+
+extension MainViewController: PhotoPickerDelegate {
+    func presentPhotoPicker() {
+        let photoPickerVC = UIImagePickerController()
+        photoPickerVC.delegate = self
+        present(photoPickerVC, animated: true, completion: nil)
+    }
+}
+
+// MARK: - ImagePicker Delegate
+
+extension MainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            logoView.logoImageView.image = pickedImage
+            logoView.logoImageView.contentMode = .scaleToFill
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
 }
